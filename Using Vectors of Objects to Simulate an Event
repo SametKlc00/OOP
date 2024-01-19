@@ -1,0 +1,26 @@
+
+Task1:
+"Insanity" adında kırmızı renkte başka bir course oluşturuluyor ve bu course "c" adlı courses dizisinin ikinci elemanına atanıyor;
+
+w2 = [42 56 78 102];
+c(2) = course("Insanity","Red",w2);
+
+Task2:
+123456, 567890 ve 987654 kimlik numaralarına sahip üç farklı "idstick" nesnesi oluşturuluyor;
+
+id = idstick([123456, 567890, 987654]);
+
+Task3:
+İlk "idstick" nesnesine "Astrid" isimli bir katılımcıyı ve ilgili course'a kaydetmek için "register" fonksiyonu kullanılıyor;
+
+id(1) = register(id(1), "Astrid", c(1));
+
+Task4:
+ikinci "idstick" nesnesine "Erik" isimli bir katılımcıyı ve aynı course olan "c(1)"'i kaydetmek için "register" fonksiyonu kullanılıyor;
+
+id(2) = register(id(2), "Erik", c(1));
+
+Task5:
+İlk "idstick" nesnesinin 42 numaralı waypoint'ini kontrol etmek için "checkWaypoint" fonksiyonu kullanılıyor;
+
+id(1) = checkWaypoint(id(1), 42);
