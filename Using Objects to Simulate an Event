@@ -1,5 +1,5 @@
 Task1:
-"Family Fun" adında bir course oluşturuluyor. Bu course, 42, 123, 124, 163, 168 ve 666 waypoint numaralarını içeren bir vektörü kullanıyor;
+"Family Fun" adında beyaz renkte bir course oluşturuluyor. Bu course, 42, 123, 124, 163, 168 ve 666 waypoint numaralarını içeren bir vektörü kullanıyor;
 
 w = [42 123 124 163 168 666];
 c = course("Family Fun","White",w);
