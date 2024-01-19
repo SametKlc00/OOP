@@ -1,0 +1,55 @@
+Task2:
+idstick sınıfından bir nesne oluşturuluyor ve bu nesnenin SerialNumber özelliğine değer atanıyor. Ancak, idstick sınıfı tanımlı değilse ya da özellikleri (properties) belirlenmemişse bir hata alabiliriz;
+
+classdef idstick
+    properties
+        SerialNumber % Seri Numarası
+        Course       % Rota
+    end
+end
+
+id = idstick;
+id.SerialNumber = 1234;
+
+Task3:
+idstick nesnesinin Course özelliğine bir değer atanıyor. Ancak, bu özellik bir course nesnesi olmalıdır ve course sınıfı da tanımlanmış olmalıdır;
+
+classdef course
+    properties
+        name      % Rota ismi
+        color     % Rota rengi
+        waypoints % Waypoint'ler
+        Level     % Seviye
+    end
+    
+    methods
+        % Constructor metodu
+        function obj = course(name, color, waypoints)
+            obj.name = name;
+            obj.color = color;
+            obj.waypoints = waypoints;
+        end
+    end
+end
+
+Sonra, idstick sınıfının tanımını da güncelleyerek Course özelliğine bir course nesnesi atayabilirsiniz:
+
+
+classdef idstick
+    properties
+        SerialNumber % Seri Numarası
+        Course       % Course
+    end
+end
+
+id = idstick;
+id.SerialNumber = 1234;
+
+c = course("Family Fun", "White", [42 123 124 163 168 666]);
+id.Course = c;
+
+Task4:
+idstick nesnesinin Course özelliğinin Waypoints özelliğine erişiliyor. Ancak, Course özelliği bir course nesnesi olmalıdır ve course sınıfı ile ilgili tanımlar yapılmış olmalıdır;
+
+w = id.Course.Waypoints;
+disp(w);
