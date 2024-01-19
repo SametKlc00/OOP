@@ -1,0 +1,38 @@
+Task2:
+course sınıfından bir nesne oluşturuluyor. Ancak, sınıfın şu anki haliyle özellikleri (properties) belirlenmiş değil, bu nedenle bir hata alabiliriz;
+
+c = course();
+
+Task4:
+Bir course nesnesi oluşturuluyor ve bu nesnenin Level özelliği alınıyor. Ancak, course sınıfında böyle bir özellik tanımlanmadığı için bir hata alabiliriz;
+
+c = course();
+lvl = c.Level;
+
+Task5:
+Level özelliğine "White" değeri atanıyor. Ancak, bu özellik course sınıfında tanımlanmamış. course sınıfını güncellemek ve Level özelliğini eklemek gerekiyor;
+
+
+classdef course
+    properties
+        name      % course ismi
+        color     % course rengi
+        waypoints % Waypoint'ler
+        Level     % Seviye
+    end
+    
+    methods
+        % Constructor metodu
+        function obj = course(name, color, waypoints)
+            obj.name = name;
+            obj.color = color;
+            obj.waypoints = waypoints;
+        end
+    end
+end
+
+Task6:
+Level özelliğine sayısal bir değer olan 42 atanıyor. Ancak, Level özelliği bir metin (string) olarak tanımlandığı için bir hata alabiliriz;
+
+c = course();
+c.Level = "42";
