@@ -1,0 +1,31 @@
+Task1:
+"Family Fun" adında bir course oluşturuluyor. Bu course, 42, 123, 124, 163, 168 ve 666 waypoint numaralarını içeren bir vektörü kullanıyor;
+
+w = [42 123 124 163 168 666];
+c = course("Family Fun","White",w);
+
+Task2:
+123456 kimlik numarasına sahip bir "idstick" nesnesi oluşturuluyor;
+
+id = idstick(123456);
+
+Task3:
+MATLAB çalışma alanındaki değişkenleri listelemek için "whos" komutu kullanılıyor;
+
+whos
+
+Task4:
+Oluşturulan "idstick" nesnesinin özellikleri (properties) ve metotları (methods) listeleniyor;
+
+properties(id)
+methods(id)
+
+Task5:
+"Astrid" isimli bir katılımcıyı "Family Fun" rotasına kaydetmek için "register" fonksiyonu kullanılıyor;
+
+id = register(id,"Astrid",c);
+
+Task6:
+Oluşturulan "idstick" nesnesinin 42 numaralı waypoint'i kontrol etmek için "checkWaypoint" fonksiyonu kullanılıyor;
+
+id = checkWaypoint(id,42);
